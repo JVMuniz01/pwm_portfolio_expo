@@ -1,16 +1,27 @@
-import { Button, Card, Text } from "@ui-kitten/components";
+import { Card, Text } from "@ui-kitten/components";
 import { useRouter } from "expo-router";
-
-export function ProjectCard({ project }) {
+import React from "react";
+interface Project {
+  id: string;
+  title: string;
+  description: string;
+  route: string;
+}
+interface ProjectCardProps {
+  project: Project;
+}
+export function ProjectCard({ project }: ProjectCardProps) {
   const router = useRouter();
 
   return (
-    <Card style={{ marginBottom: 15 }} onPress={() => router.push(project.route)}>
+    <Card
+      style={{ marginBottom: 15 }}
+      onPress={() => router.push(`/projects/${project.id}`)}
+    >
       <Text category="s1">{project.title}</Text>
-      <Text category="p2" style={{ marginTop: 5 }}>{project.description}</Text>
-      <Button style={{ marginTop: 10 }} size="small" onPress={() => router.push(project.route)}>
-        Ver projeto
-      </Button>
+      <Text appearance="hint" category="p2" style={{ marginTop: 5 }}>
+        {project.description}
+      </Text>
     </Card>
   );
 }
