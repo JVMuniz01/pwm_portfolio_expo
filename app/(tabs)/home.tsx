@@ -1,4 +1,4 @@
-import { Button, Card, Layout, Text } from "@ui-kitten/components";
+import { Button, Layout, Text } from "@ui-kitten/components";
 import { useRouter } from "expo-router";
 import { ScrollView } from "react-native";
 export default function Home() {
@@ -21,13 +21,13 @@ export default function Home() {
           Bem vindo ao meu portfólio
         </Text>
 
-        <Card style={{ width: "100%", marginBottom: 20 }}>
+        <Layout style={{ width: "100%", marginBottom: 20 }}>
           <Text category="h6" style={{ textAlign: "center", paddingTop: 10 }}>
             Estudante de Desenvolvimento Web e Mobile. Inicialmente focado no
             back-end (Java e Springboot), mas em constante aprendizado com o
             objetivo de me tornar um ótimo Desenvolvedor Fullstack.
           </Text>
-        </Card>
+        </Layout>
         <Button
           style={{ width: "40%", marginTop: 100 }}
           status="success"

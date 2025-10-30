@@ -127,9 +127,6 @@ export default function JogoForca() {
       <Button style={{ marginTop: 20 }} onPress={novaPalavra}>
         🔁 Reiniciar
       </Button>
-      <Button onPress={() => router.push("/(tabs)/home")} style={{ marginTop: 20 }}>
-        Voltar para Home
-        </Button>
     </Layout>
   );
 }
