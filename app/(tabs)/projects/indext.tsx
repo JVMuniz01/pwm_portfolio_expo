@@ -8,7 +8,7 @@ export default function ProjectsScreen() {
   return (
     <Layout style={{ flex: 1, padding: 16 }}>
       <Text category="h5" style={{ marginBottom: 15 }}>
-        Meus Projetos
+        Projetos
       </Text>
 
       <FlatList

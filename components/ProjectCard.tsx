@@ -5,7 +5,8 @@ interface Project {
   id: string;
   title: string;
   description: string;
-  route: string;
+  github: string;
+  technologies: string[];
 }
 interface ProjectCardProps {
   project: Project;
