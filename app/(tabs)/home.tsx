@@ -21,7 +21,8 @@ export default function Home() {
           Bem vindo ao meu portfólio
         </Text>
 
-        <Layout style={{ width: "100%", marginBottom: 20 }}>
+        <Layout style={{ width: "100%", marginBottom: 20 ,backgroundColor: "#f5f5f5",
+}}>
           <Text category="h6" style={{ textAlign: "center", paddingTop: 10 }}>
             Estudante de Desenvolvimento Web e Mobile. Inicialmente focado no
             back-end (Java e Springboot), mas em constante aprendizado com o
