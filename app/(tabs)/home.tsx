@@ -15,7 +15,7 @@ export default function Home() {
           backgroundColor: "#f5f5f5",
         }}
       >
-        <Text category="h2" style={{ marginBottom: 20, textAlign: "center" }}>
+        <Text category="h2" style={{ marginBottom: 20, textAlign: "center", marginTop: 20 }}>
           João Victor Muniz
         </Text>
         <Text category="h3" style={{ marginBottom: 20, textAlign: "center" }}>
