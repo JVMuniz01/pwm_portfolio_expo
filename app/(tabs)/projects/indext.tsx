@@ -6,8 +6,8 @@ import { projects } from "../../data/projects";
 
 export default function ProjectsScreen() {
   return (
-    <Layout style={{ flex: 1, padding: 16 }}>
-      <Text category="h5" style={{ marginBottom: 15 }}>
+    <Layout style={{ flex: 1, padding: 16, paddingTop: 80 }}>
+      <Text category="h5" style={{ marginBottom: 30, fontWeight: 'bold', paddingLeft:8 }}>
         Projetos
       </Text>
 
